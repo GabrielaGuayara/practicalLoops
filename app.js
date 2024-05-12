@@ -30,13 +30,17 @@ function isPrime(n){
                     break;
                 }
             }
+            if(isPrime){
+                break;
+            }
+            nextNumb++;
         }
 
-   
+   console.log(`The following prime number is ${nextNumb}`)
 }
 
 isPrime(5)
-isPrime(9)
+// isPrime(9)
 // //PART THREE: FEELING LOOPY
 // const data = "ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63,Blaine,Quiz Master,58\n98,Bill,Doctor’s Assistant,26"
 
