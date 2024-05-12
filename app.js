@@ -19,18 +19,20 @@
 function isPrime(n){
 
     let nextNumb = n+1;
+    let isPrime = true;
     let counter = 10;
 
-    if(n>1){
+        while(true){
+            isPrime = true;
             for(let i=2; i<= counter; i++){
-                if(!(nextNumb%i===0)){
-                    console.log(nextNumb)
+                if(nextNumb%i===0){
+                    isPrime = false;
                     break;
                 }
-                nextNumb++;
             }
         }
-        console.log(`The next primer number is ${nextNumb}`)
+
+   
 }
 
 isPrime(5)
