@@ -16,31 +16,38 @@
 
 
 //PART TWO: PRIME TIME
-let n=5
-let counter = 10;
-if(n>1){
-    for(let i=n; i<= counter; i++){
-        n++;
-        if(!(n%i===0)){
-            console.log(i)
-            break;
+function isPrime(n){
+
+    let nextNumb = n+1;
+    let counter = 10;
+
+    if(n>1){
+            for(let i=2; i<= counter; i++){
+                if(!(nextNumb%i===0)){
+                    console.log(nextNumb)
+                    break;
+                }
+                nextNumb++;
+            }
         }
-    }
+        console.log(`The next primer number is ${nextNumb}`)
 }
 
-//PART THREE: FEELING LOOPY
-const data = "ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63,Blaine,Quiz Master,58\n98,Bill,Doctor’s Assistant,26"
+isPrime(5)
+isPrime(9)
+// //PART THREE: FEELING LOOPY
+// const data = "ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63,Blaine,Quiz Master,58\n98,Bill,Doctor’s Assistant,26"
 
 
-for(j=0; j<= data.length; j++){
+// for(j=0; j<= data.length; j++){
 
-if(!(data[j]===",")){
-    let cell = ""; 
-    cell+= data[j];
-    console.log(cell)
-}
+// if(!(data[j]===",")){
+//     let cell = ""; 
+//     cell+= data[j];
+//     console.log(cell)
+// }
 
-}
+// }
 
 
 
