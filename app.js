@@ -16,30 +16,30 @@
 
 
 //PART TWO: PRIME TIME
-function isPrime(n){
+// function isPrime(n){
 
-    let nextNumb = n+1;
-    let isPrime = true;
-    let counter = 10;
+//     let nextNumb = n+1;
+//     let isPrime = true;
+//     let counter = 10;
 
-        while(true){
-            isPrime = true;
-            for(let i=2; i<= counter; i++){
-                if(nextNumb%i===0){
-                    isPrime = false;
-                    break;
-                }
-            }
-            if(isPrime){
-                break;
-            }
-            nextNumb++;
-        }
+//         while(true){
+//             isPrime = true;
+//             for(let i=2; i<= counter; i++){
+//                 if(nextNumb%i===0){
+//                     isPrime = false;
+//                     break;
+//                 }
+//             }
+//             if(isPrime){
+//                 break;
+//             }
+//             nextNumb++;
+//         }
 
-   console.log(`The following prime number is ${nextNumb}`)
-}
+//    console.log(`The following prime number is ${nextNumb}`)
+// }
 
-isPrime(5)
+// isPrime(5)
 // isPrime(9)
 // //PART THREE: FEELING LOOPY
 // const data = "ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63,Blaine,Quiz Master,58\n98,Bill,Doctor’s Assistant,26"
