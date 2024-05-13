@@ -41,20 +41,16 @@
 
 // isPrime(5)
 // isPrime(9)
-// //PART THREE: FEELING LOOPY
-// const data = "ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63,Blaine,Quiz Master,58\n98,Bill,Doctor’s Assistant,26"
+//PART THREE: FEELING LOOPY
+const data = "ID,Name,Occupation,Age\r\n42,Bruce,Knight,41\r\n57,Bob,Fry Cook,19\r\n63,Blaine,Quiz Master,58\r\n98,Bill,Doctor’s Assistant,26";
+let row = data.split("\r\n")
+let cell="";
 
-
-// for(j=0; j<= data.length; j++){
-
-// if(!(data[j]===",")){
-//     let cell = ""; 
-//     cell+= data[j];
-//     console.log(cell)
-// }
-
-// }
-
+for(j=0; j< row.length; j++){
+   console.log(row[j]);
+   cell= row[j].split(",");
+    console.log(cell.join(" "));
+   }
 
 
 
